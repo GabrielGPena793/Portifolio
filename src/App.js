@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Home from "./components/Home";
+import Skills from "./components/Skills";
 import "./styles.css";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
       <Header />
       <Home />
+      <Skills />
     
     </> 
   );
