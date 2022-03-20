@@ -1,7 +1,14 @@
 header{
     margin-top: 20px;
     padding: 10px 0;
+    /* position: sticky;
+    top: 0;
+    z-index: 5; */
 
+}
+
+.scroll{
+    background-color: #EA5F5F;
 }
 
 .container-header{
@@ -48,7 +55,7 @@ header ul{
     font-size: 20px;
     font-weight: 500;
 
-    gap: 1rem;
+    gap: 2rem;
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0; 
@@ -70,4 +77,22 @@ header a.contact_link{
     color: #fff;
     font-weight: 500;
 
+}
+
+
+@media (max-width: 768px){
+
+    header ul{
+        font-size: 16px;
+        gap: 1rem;
+    }
+
+
+}
+
+@media (max-width: 425px){
+
+    header ul {
+        display: none;
+    }
 }

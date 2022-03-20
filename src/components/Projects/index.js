@@ -1,7 +1,7 @@
 import React from 'react';
-import site1 from "../../assets/site1.png";
-import site2 from "../../assets/site2.png";
-import site3 from "../../assets/site3.png";
+// import site1 from "../../assets/site1.png";
+// import site2 from "../../assets/site2.png";
+// import site3 from "../../assets/site3.png";
 import site4 from "../../assets/site4.png";
 import site5 from "../../assets/site5.png";
 import site6 from "../../assets/site6.png";
@@ -9,16 +9,7 @@ import site7 from "../../assets/site7.png";
 import site8 from "../../assets/site8.png";
 import site9 from "../../assets/site9.png";
 import "./styles.css"
-// import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 
 
 
@@ -84,7 +75,7 @@ const dataImg = [
 
 export default function Projects() {
     return (
-        <section className='section-projects container'>
+        <section id='projeto' className='section-projects container'>
             <div className='container-title'>
                 <h2>Projetos</h2>
                 <p>Aqui estão alguns projetos que já realizei até o momento, no frontend e no backend.</p>

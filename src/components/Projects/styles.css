@@ -1,12 +1,12 @@
 .section-projects{
-    height: 100vh;
+    /* height: 100vh; */
   
 }
 
 .section-projects h2 {
     font-size: 50px;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 88px;
 
 }
 
@@ -16,8 +16,13 @@
 
 .container-title{
     width: 591px;
+    margin: 3rem auto;
     margin-bottom: 2rem;
     margin-left: 4rem;
+}
+
+.container-title p{
+    color: darkgray;
 }
 
 .container-project{
@@ -93,4 +98,35 @@
 .hidden-container:hover a{
     transition: 0.5s;
     visibility: visible;
+}
+
+
+@media (max-width: 768px){
+
+    .container-title {
+        text-align: center;
+        margin: 3rem auto;
+        width: 64%;
+    }
+}
+
+@media (max-width: 1024px){
+
+    .row {
+        --bs-gutter-x: 0;
+     }
+
+     .container-title {
+        text-align: center;
+        margin: 2rem 0;
+        width: 100%; 
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 1440px){
+
+
+
 }

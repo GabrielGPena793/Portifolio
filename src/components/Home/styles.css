@@ -13,7 +13,7 @@
 .container-description h2{
     font-size: 50px;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 89px;
     text-align: left;
 
 }
@@ -47,7 +47,6 @@
 
 .img-efeito2{
     position: absolute;
-    position: absolute;
     bottom: 0;
     right: -10px;
 }
@@ -56,7 +55,6 @@
     position: relative;
     z-index: 2;
     width: 500px;
-    height: 500px;
     border-radius: 50%;
     background-color: black;
 }
@@ -71,49 +69,83 @@
     height: 225px;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1024px){
     
 
     
-    .container-description h1{
-        font-size: 4.25rem;
-        font-weight: 700;
-        line-height: 90px;
-        z-index: 2;
-        width: 100%;
+    .container-description p{
+        font-size: 15px;
+    }
+
+    .container-description h2{
+        font-size: 39px;
     }
 }
 
-@media (max-width: 990px){
 
+@media (max-width: 991px){
 
-    
+    .container-description{
+        padding: 67px 0 67px 36px;
+    }
+
     .container-description h2{
-        font-size: 3.25rem;
-        font-weight: 700;
-        line-height: 86px;
-        z-index: 2;
-        width: 100%;
+        font-size: 1.25rem;
+        line-height: 15px;
     }
 
     .container-description p {
-        width: 21.56rem;
+        line-height: 31px;
     }
-   
+
+    .img-efeito2{
+        width: 178px;
+        right: -2px;
+    }
+
+    
+    .img-efeito1{
+        width: 178px;
+    }
+
 }
 
 @media (max-width: 768px){
+    .home{
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+        flex-direction: column;
+    }
 
+    .container-description{
+        padding: 0px 0 67px 0px;
+        text-align: center;
+    }
 
     .container-description h2{
-        font-size: 2.25rem;
-        font-weight: 700;
-        line-height: 44px;
+        margin: 25px 0;
+        text-align: center;
+        font-size: 1.85rem;
+        line-height: 40px;
     }
 
     .container-description p {
-        width: 14.56rem;
+        font-size: 15px;
     }
 
+    
+}
+
+@media (max-width: 425px){
+    
+    .container-description {
+        width: 100%;
+    }
+
+    .container-description p {
+        line-height: 26px;
+    }
+
+   
 
 }

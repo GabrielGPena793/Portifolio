@@ -36,7 +36,7 @@ const data = [
 
 export default function Skills() {
   return (
-    <section className='skills container'>
+    <section id='skill' className='skills container'>
         <h2>Habilidades</h2>
         <div className='container-skills row row-cols-3 justify-content-center'>
             {

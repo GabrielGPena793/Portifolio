@@ -1,13 +1,30 @@
-import React from 'react'
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import "./styles.css"
 
+const menu = [
+    {
+        ref:"Home",
+        ancor: "#",
+    },
+    {
+        ref:"Habilidades",
+        ancor: "#skill",
+    },
+       {
+        ref:"Projetos",
+        ancor: "#projeto",
+    },
+    {
+        ref:"Contato",
+        ancor: "#footer",
+    },
+]
+
 export default function Header() {
-
-
-    const menu = ["Home", "About", "Services", "Portifólio"]
-
+    
     return (
-        <header>
+
+        <header  id='header'>
             <div className="container-header container">
                 <div className="container-logo">
                     <span className="first-letter">G</span>
@@ -15,7 +32,7 @@ export default function Header() {
                 </div>
                 <ul>
                     {
-                        menu.map((item, index) => <a key={`${index}item`} href="#"><li >{item}</li></a> )
+                        menu.map(({ref, ancor}, index) => <a key={`${index}item`} href={ancor}><li>{ref}</li></a> )
                     }
                 </ul>
                 <a className='contact_link' href="#">
@@ -24,4 +41,8 @@ export default function Header() {
             </div>
         </header>
     )
+
 }
+
+
+
