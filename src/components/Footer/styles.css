@@ -1,0 +1,22 @@
+.container-footer{
+    width: 577px;
+    height: 478px;
+    margin: auto;
+    text-align: center;
+}
+
+.letter{
+    background: linear-gradient(214.02deg, #EA5F5F 6.04%, #EEAA55 92.95%);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle();
+
+    font-weight: 700;
+    color: #fff;
+    font-size: 40px;
+
+}
+
