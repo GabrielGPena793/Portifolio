@@ -105,33 +105,6 @@ export default function Projects() {
                         </div>
                 )
             }
-                {/* <Swiper
-                    // install Swiper modules
-                    modules={[Navigation, Pagination, Scrollbar, A11y]}
-                    spaceBetween={50}
-                    slidesPerView={3}
-                    navigation
-                    pagination={{ clickable: true }}
-                    scrollbar={{ draggable: true }}
-                    onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log('slide change')}
-                >
-                      {
-                dataImg.map(({ img, linkSite, linkGithub, alt }, index) =>
-
-                        <SwiperSlide key={`${index}`} className='container-project'>
-                            <img className='img-fluid' src={img} alt={alt} />
-                            <div className='hidden-container'>
-                                <a className='left-link' rel="noreferrer" target="_blank" href={linkSite}><span>Site</span></a>
-                                <a className='right-link' rel="noreferrer" target="_blank" href={linkGithub}><span>GitHub</span></a>
-                            </div>
-                        </SwiperSlide>
-                )
-                }
-     
-                
-                </Swiper> */}
-
             </div>
         </section>
     )
