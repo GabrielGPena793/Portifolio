@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import "./styles.css"
+import React, { useEffect, useState } from "react"
 
 const menu = [
     {
@@ -20,11 +21,29 @@ const menu = [
     },
 ]
 
+
+
+
+
 export default function Header() {
     
+    const [headerColor, setHeaderColor] = useState("transparent")
+
+
+    const listenScrollEvent = () => {
+        window.scrollY > 20 ? setHeaderColor("branco") : setHeaderColor("transparent");
+    }
+
+    useEffect(() => {
+        window.addEventListener("scroll", listenScrollEvent)
+    })
+
+
+   
+
     return (
 
-        <header  id='header'>
+        <header className={headerColor}  id='header'>
             <div className="container-header container">
                 <div className="container-logo">
                     <span className="first-letter">G</span>

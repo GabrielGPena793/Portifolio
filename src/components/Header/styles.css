@@ -1,9 +1,9 @@
 header{
     margin-top: 20px;
     padding: 10px 0;
-    /* position: sticky;
+    position: sticky;
     top: 0;
-    z-index: 5; */
+    z-index: 5;
 
 }
 
@@ -88,6 +88,11 @@ header a.contact_link{
     }
 
 
+}
+
+.branco{
+    background: linear-gradient(black, transparent);
+    /* background-color: #fff; */
 }
 
 @media (max-width: 425px){
