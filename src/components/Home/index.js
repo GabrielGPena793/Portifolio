@@ -9,7 +9,7 @@ AOS.init();
 
 export default function Home() {
   return (
-    <section  className='home container'>
+    <section id='Home' className='home container'>
         <div data-aos-duration="2000" data-aos="fade-right" className='container-img'>
           <img className='img-efeito1' src={img2} alt="" />
           <img className='img-fluid img-eu' src={img} alt="" />

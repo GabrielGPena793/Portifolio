@@ -81,7 +81,7 @@ const dataImg = [
 
 export default function Projects() {
     return (
-        <section id='projeto' className='section-projects container'>
+        <section id='Projetos' className='section-projects container'>
             <div data-aos="fade-right" className='container-title'>
                 <h2>Projetos</h2>
                 <p>Aqui estão alguns projetos que já realizei até o momento, no frontend e no backend.</p>
