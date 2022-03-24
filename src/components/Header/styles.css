@@ -4,11 +4,9 @@ header{
     position: sticky;
     top: 0;
     z-index: 5;
+    background: transparent;
+    transition: 0.5s;
 
-}
-
-.scroll{
-    background-color: #EA5F5F;
 }
 
 .container-header{
@@ -79,6 +77,10 @@ header a.contact_link{
 
 }
 
+.branco{
+    background: linear-gradient(black, transparent);
+}
+
 
 @media (max-width: 768px){
 
@@ -90,10 +92,6 @@ header a.contact_link{
 
 }
 
-.branco{
-    background: linear-gradient(black, transparent);
-    /* background-color: #fff; */
-}
 
 @media (max-width: 425px){
 

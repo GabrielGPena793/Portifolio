@@ -37,36 +37,42 @@ const dataImg = [
         linkSite: "https://gabrielgpena793.github.io/Projeto_bts_sass/",
         linkGithub: "https://github.com/GabrielGPena793/Projeto_bts_sass",
         alt: "imagem do site sobre artes urbanas",
+        animationTime: "1000",
     },
     {
         img: site5,
         linkSite: "https://gabrielgpena793.github.io/CheckPointFInalB1/",
         linkGithub: "https://github.com/GabrielGPena793/CheckPointFInalB1",
         alt: "imagem do site de uma clinica veterinária",
+        animationTime: "1500",
     },
     {
         img: site6,
         linkSite: "https://gabrielgpena793.github.io/CheckPoint_FrontEnd_1/",
         linkGithub: "https://github.com/GabrielGPena793/CheckPointFInalB1",
         alt: "imagem do site sobre a cidade de Recife-PE",
+        animationTime: "2000",
     },
     {
         img: site7,
         linkSite: "https://gabrielgpena793.github.io/Conversor-de-Moedas/",
         linkGithub: "https://github.com/GabrielGPena793/Conversor-de-Moedas",
         alt: "imagem do site que converte moedas",
+        animationTime: "1000",
     },
     {
         img: site8,
         linkSite: "https://gabrielgpena793.github.io/Projeto1_com_Sass/",
         linkGithub: "https://github.com/GabrielGPena793/Projeto1_com_Sass",
         alt: "imagem do site de uma agência",
+        animationTime: "1500",
     },
     {
         img: site9,
         linkSite: "https://gabrielgpena793.github.io/Projeto_Sass2/",
         linkGithub: "https://github.com/GabrielGPena793/Projeto_Sass2",
         alt: "imagem do site de uma loja de E-commerce, venda de eletrônicos",
+        animationTime: "2000",
     },
 
 
@@ -76,7 +82,7 @@ const dataImg = [
 export default function Projects() {
     return (
         <section id='projeto' className='section-projects container'>
-            <div className='container-title'>
+            <div data-aos="fade-right" className='container-title'>
                 <h2>Projetos</h2>
                 <p>Aqui estão alguns projetos que já realizei até o momento, no frontend e no backend.</p>
                 <p>Passe o mause por cima dos projetos para saber mais</p>
@@ -85,9 +91,9 @@ export default function Projects() {
             <div className='projects row row-cols-3 justify-content-center'>
                 
             {
-                dataImg.map(({ img, linkSite, linkGithub, alt }, index) =>
+                dataImg.map(({ img, linkSite, linkGithub, alt, animationTime }, index) =>
 
-                        <div key={`${index}`} className='container-project'>
+                        <div data-aos="fade-up" data-aos-duration={animationTime} key={`${index}`} className='container-project'>
                             <img className='img-fluid' src={img} alt={alt} />
                             <div className='hidden-container'>
                                 <a className='left-link' rel="noreferrer" target="_blank" href={linkSite}><span>Site</span></a>

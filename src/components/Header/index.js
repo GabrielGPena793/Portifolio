@@ -27,11 +27,11 @@ const menu = [
 
 export default function Header() {
     
-    const [headerColor, setHeaderColor] = useState("transparent")
+    const [headerColor, setHeaderColor] = useState("")
 
 
     const listenScrollEvent = () => {
-        window.scrollY > 20 ? setHeaderColor("branco") : setHeaderColor("transparent");
+        window.scrollY > 20 ? setHeaderColor("branco") : setHeaderColor("");
     }
 
     useEffect(() => {
