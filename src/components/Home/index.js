@@ -4,6 +4,7 @@ import img  from "../../assets/euHome.svg"
 import img2  from "../../assets/Titik-titik.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import curriculo from "../../assets/pdfs/Profile.pdf"
 
 AOS.init();
 
@@ -21,7 +22,7 @@ export default function Home() {
             e o quanto ela pode tornar problemas complexos  e chatos em problemas simples e mais prazerosos de se realizar. 
             Prentendo aprender  cada vez mais para fazer parte desse futuro tecnologico e tudo que vai vir com ele,
             Estou gostando bastante de java e estou focando bastante tempo para melhorar cada vez mais.</p>
-            <a href="#">Download CV</a>
+            <a href={curriculo} download="gabriel_curriculo.pdf">Download CV</a>
       </div>
     
     </section>

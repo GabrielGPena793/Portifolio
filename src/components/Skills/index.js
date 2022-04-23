@@ -43,7 +43,7 @@ const data = [
 export default function Skills() {
   return (
     <section id='Habilidades' className='skills container'>
-        <h2  data-aos="fade-up">Habilidades</h2>
+        <h2  data-aos="fade-up">Principais Habilidades</h2>
         <div className='container-skills row row-cols-3 justify-content-center'>
             {
                 data.map(({img, nome, descricao, animationTime}, index) =>  
